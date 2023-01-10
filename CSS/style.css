@@ -22,6 +22,7 @@ header{
     position: fixed;
     background-color: #f2f2f2;
     width: 100%;
+    z-index: 999;
 }
 
 .container{
@@ -76,9 +77,10 @@ nav a:hover {
 #banner {
     display: flex;
     justify-content: center;
-    background-image: url(../imagens/depilação.jpg);
+    background-image: url(../imagens/bannerdonna2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 670px;
 }
 
@@ -125,12 +127,13 @@ nav a:hover {
 .banner2,
 .banner3 {
     flex: 1;
-    color: #000;
-    margin-bottom: -40px;
+    /*margin-bottom: -40px;*/
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .banner1 {
-    background-color: #ffa8d9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,8 +141,8 @@ nav a:hover {
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
-    box-shadow: 1px 1px 3px 3px #727272;
-    margin-right: 5px;
+    /*box-shadow: 1px 1px 3px 3px #727272;
+    margin-right: 5px;*/
 }
 
 .banner1 img {
@@ -164,6 +167,7 @@ nav a:hover {
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
+    color: var(--cor6);
 }
 .banner1 .description h2 {
     display: flex;
@@ -171,6 +175,8 @@ nav a:hover {
     text-align: center;
     margin-top: 10px;
     font-size: 15px;
+    color: var(--cor6);
+    font-weight: bold;
 }
 
 .banner1 .icon:hover {
@@ -179,7 +185,6 @@ nav a:hover {
 
 
 .banner2 {
-    background-color: var(--cor7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,8 +192,6 @@ nav a:hover {
     padding-left: 5px;
     padding-right: 5px;
     margin-right: 5px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px 3px #727272;
 }
 
 .banner2 img {
@@ -212,6 +215,7 @@ nav a:hover {
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
+    color: var(--cor6);
 }
 .banner2 .description h2 {
     display: flex;
@@ -219,6 +223,8 @@ nav a:hover {
     text-align: center;
     padding-top: 15px;
     font-size: 15px;
+    color: var(--cor6);
+    font-weight: bold;
 }
 
 .banner2 .icon:hover {
@@ -227,15 +233,12 @@ nav a:hover {
 
 
 .banner3 {
-    background-color: var(--cor7);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px 3px #727272;
 }
 
 .banner3 img {
@@ -260,6 +263,7 @@ nav a:hover {
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
+    color: var(--cor6);
 }
 .banner3 .description h2 {
     display: flex;
@@ -267,6 +271,8 @@ nav a:hover {
     text-align: center;
     padding-top: 15px;
     font-size: 15px;
+    color: var(--cor6);
+    font-weight: bold;
 }
 
 .banner3 .icon:hover {
@@ -274,12 +280,7 @@ nav a:hover {
 }
 
 .description  {
-    color: #727272;
     text-align: center;
-}
-
-.description:hover {
-    color: var(--cor6);
 }
 
 
